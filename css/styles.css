@@ -1,0 +1,22 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+nav li {
+    color: #2E2F42;
+}
+
