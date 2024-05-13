@@ -17,16 +17,19 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    font-weight: Bold;
+.title-second {
+    font-weight: 700;
     font-size: 36px;
     text-align: center;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
 }
 
 h3 {
-    font-weight: Medium;
+    font-weight: 500;
     font-size: 20px;
-    text-align: center;
+    color: #2e2f42;
+    line-height: 1.2 ;
 }
 
 ul {
@@ -44,10 +47,10 @@ a {
     line-height: 117%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42;
+    color: #4d5ae5;
 }
 .logo span {
-    color: #4D5AE5;
+    color: #2E2F42;
 }
 
 nav li a {
@@ -58,11 +61,11 @@ li a {
     color: #2E2F42;
 }
 
-address {
+.contacts {
     font-style: normal;
 }
 
-.container-address li a {
+.contacts li a {
     color:#434455;
     font-weight: 400;
 }
@@ -82,7 +85,7 @@ background-color: #2E2F42;
 color: #F4F4FD;
 }
 
-footer .logo a {
+footer .logo span {
     color: #F4F4FD;
 }
 
@@ -91,7 +94,7 @@ footer .logo a {
     background-color: #2E2F42;
 }
 
-.banner button {
+.main-button {
 background-color: #4D5AE5;
 color: #fff;
 cursor: pointer;
@@ -100,11 +103,11 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 }
 
-.banner button:hover,
-.banner button:focus {
+.main-button:hover,
+.main-button:focus {
     background-color: #404BBF;
 }
 
-.main-title {
-
+.section-team {
+    background-color:  #F4F4FD;
 }
