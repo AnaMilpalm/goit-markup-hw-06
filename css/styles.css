@@ -83,12 +83,12 @@ li a:focus {
     font-weight: 400;
 }
 
-footer {
+.footer {
 background-color: #2E2F42;
 color: #F4F4FD;
 }
 
-footer .logo span {
+.footer .logo span {
     color: #F4F4FD;
 }
 
@@ -112,5 +112,5 @@ letter-spacing: 0.04em;
 }
 
 .section-team {
-    background-color:  #F4F4FD;
+    background-color:  #FFF;
 }
