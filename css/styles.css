@@ -56,7 +56,7 @@ a {
     color: #2E2F42;
 }
 
-.link-nav a {
+.link-nav  {
     font-weight: 500;
 }
 
@@ -103,7 +103,7 @@ color: #fff;
 cursor: pointer;
 font-weight: 500;
 line-height: 1.5;
-letter-spacing: 0.04em;
+letter-spacing: 0.02em;
 }
 
 .main-button:hover,
@@ -112,5 +112,9 @@ letter-spacing: 0.04em;
 }
 
 .section-team {
-    background-color:  #FFF;
+    background-color:  #F4F4FD;
+}
+
+.team-card {
+    background-color: #fff;
 }
