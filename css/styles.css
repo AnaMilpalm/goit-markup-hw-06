@@ -38,7 +38,7 @@ img {
 .container {
     max-width: 1158px;
     margin: 0 auto;
-    
+    padding: 0 15px;
 }
 
 .flex-container {
@@ -63,6 +63,7 @@ align-items: center;
     display: flex;
     gap: 40px;
     margin-right: 0;
+    padding: 24px 0;
 }
 
 .header {
