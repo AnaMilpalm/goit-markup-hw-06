@@ -43,6 +43,7 @@ img {
 
 .flex-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-container {
@@ -216,16 +217,15 @@ fill: #2e2f42;
 }
 
 .list-about {
+    display: flex;
  gap: 24px;
+ flex-wrap: wrap;
 }
 
 .item-about {
     flex-basis: calc((100% - 72px) / 4 );
     gap: 20px;
-}
-
-.title-about {
-    display: none;
+    max-width: 264px;
 }
 
 .item-about-title {
@@ -258,7 +258,7 @@ text-align: center;
     margin-bottom: 8px;
 }
 .team-card-description {
-    padding: 0;
+    padding: 0 16px;
 }
 
 .title-second {
@@ -307,4 +307,24 @@ width: calc((100% - 48px) / 3);
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     padding: 32px 16px;
+}
+
+.icon {
+    display: inline-block;
+    margin-top: 8px;
+    fill: #fff;
+}
+
+.icon-box {
+    background-color: #F4F4FD;
+    display: block;
+    padding: 24px 0;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.icon-box:hover {
+    border: 1px solid #8E8F99;
 }
