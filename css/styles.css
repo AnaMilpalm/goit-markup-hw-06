@@ -137,7 +137,7 @@ a {
 }
 
 li a {
-    color: #2E2F42;
+    color: #404bbf;
 }
 
 .contacts {
@@ -178,6 +178,11 @@ padding: 100px 0;
 
 .footer .text {
     max-width: 264px;
+    color: #FFFFFF;
+}
+.social-list-item.footer-social .social-item-link:hover,
+ .social-list-item.footer-social .social-item-link:focus {
+    background-color: #31d0aa;
 }
 
 .description-company {
