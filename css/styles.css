@@ -350,9 +350,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .portfolio-card {
 max-width: 360px;
 width: calc((100% - 48px) / 3);
-box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
+.portfolio-card:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
+}
+
 
 .portfolio-card-content {
     border-bottom: 1px solid #E7E9FC;
@@ -380,10 +385,6 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .icon-box:hover {
     border: 1px solid #8E8F99;
-}
-
-.portfolio-image-box {
-    
 }
 
 .overlay {
