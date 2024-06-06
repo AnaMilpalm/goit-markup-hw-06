@@ -191,6 +191,7 @@ padding: 100px 0;
     margin-bottom: 16px;
     font-weight: 500;
     color: #ffffff;
+    display: block;
 }
 
 /* section banner */
@@ -309,11 +310,28 @@ border-radius: 0 0 4px 4px;
     gap:16px;
 }
 
+.social-box {
+    margin-right: 80px;
+}
+
 .footer-social .social-item-link:hover,
 .footer-social .social-item-link:focus {
     background-color: #31d0aa;
 
 }
+
+.footer-send-box {
+    display: flex;
+}
+
+.footer-mail {
+    border: 1px solid #fff;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+margin-right: 24px;
+} 
 
 
 .social-item-link {
@@ -407,4 +425,215 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .portfolio-card:hover .text-overlay {
 transform: translateY(0);
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    background-color: rgba(46, 47, 66, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* pointer-events: none; */
+    z-index: 9999;
+}
+
+.modal {
+    border-radius: 4px;
+width: 408px;
+height: 584px;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+background-color: #fcfcfc;
+padding: 24px;
+
+}
+
+.title-forth {
+font: 500 16px / 1.5 "Roboto", sans-serif;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+
+margin-bottom: 16px;
+}
+
+.modal-input,
+.user-comment {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 4px;
+width: 360px;
+height: 40px;
+background-color: inherit;
+padding: 8px 38px;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16667;
+letter-spacing: 0.04em;
+color: #4d5ae5;
+opacity: 0.5;
+outline: transparent;
+
+}
+
+.modal-input::placeholder,
+.user-comment::placeholder {
+    color: #8e8f99;
+}
+
+.user-comment {
+    padding-left: 16px;
+    height: 120px;
+    resize: none;
+}
+.modal-input:focus {
+   border-color:  #4d5ae5;
+}
+
+.modal-input:focus + .input-icon {
+    fill: #4d5ae5;
+}
+
+.modal-input:valid {
+
+}
+
+.modal-input:invalid {
+    
+}
+
+.modal-field {
+
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.input-icon {
+    fill: #2e2f42;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.modal-close {
+    margin-left: auto;
+    display: block;
+    margin-bottom: 24px;
+    border-radius: 100%;
+fill: #e7e9fc;
+stroke-width: 1px;
+stroke: rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(227, 175, 80, 0.4);
+
+
+}
+
+.title-label {
+    font: 400 12px / 1.16667 "Roboto", sans-serif;
+letter-spacing: 0.04em;
+color: #8e8f99;
+}
+
+.modal-btn {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
+height: 56px;
+border: none;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: #4d5ae5;
+font: 500 16px / 1.5 "Roboto", sans-serif;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+}
+
+.checkbox-box {
+    margin-bottom: 24px;
+}
+
+.model-check {
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+
+}
+/* checkbox style */
+.modal-check-text {
+    font: 400 12px / 1.16667 "Roboto", sans-serif;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: flex;
+    align-items: center;
+}
+
+.model-check:checked + .modal-check-text span {
+    background-color:#404BBF;
+    fill: #f4f4fd;;
+} 
+
+.modal-check-text span {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+margin-right: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+}
+.modal-check-text span:active {
+    border-radius: 2px;
+    fill: #404bbf;
+    border: 1px solid #404bbf;
+} 
+
+.is-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.footer-mail {
+    background-color: transparent;
+}
+.footer-mail::placeholder {
+    padding: 16px 8px;
+    font: 400 12px / 2 "Roboto", sans-serif;
+letter-spacing: 0.04em;
+color: #fff;
+
+}
+
+.btn-subscribe {
+    position: relative;
+    font: 500 16px / 1.5 "Roboto", sans-serif;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+display: flex;
+align-items: center;
+
+flex-direction: row;
+gap: 16px;
+border-radius: 4px;
+padding: 8px 24px;
+width: 165px;
+height: 40px;
+background: #4d5ae5;
+border: 1px solid #4d5ae5;
+}
+
+.icon-subscribe {
+    fill: #fff;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
 }
