@@ -320,20 +320,6 @@ border-radius: 0 0 4px 4px;
 
 }
 
-.footer-send-box {
-    display: flex;
-}
-
-.footer-mail {
-    border: 1px solid #fff;
-border-radius: 4px;
-width: 264px;
-height: 40px;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-margin-right: 24px;
-} 
-
-
 .social-item-link {
     display: flex;
 width: 40px;
@@ -626,6 +612,29 @@ fill: transparent;
     font: 400 12px / 2 "Roboto", sans-serif;
 letter-spacing: 0.04em;
 color: #fff;
+
+}
+
+.footer-send-box {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-mail {
+border: 1px solid #fff;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+margin-right: 24px;
+background-color: transparent;
+font-size: 12px;
+line-height: 2;
+padding-left: 16px;
+letter-spacing: 0.04em;
+} 
+
+.footer-mail-box {
 
 }
 
