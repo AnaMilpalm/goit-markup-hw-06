@@ -438,6 +438,9 @@ transform: translateY(0);
     align-items: center;
     /* pointer-events: none; */
     z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal {
@@ -447,6 +450,7 @@ height: 584px;
 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 background-color: #fcfcfc;
 padding: 24px;
+position: relative;
 
 }
 
@@ -520,16 +524,30 @@ outline: transparent;
 }
 
 .modal-close {
-    margin-left: auto;
-    display: block;
-    margin-bottom: 24px;
-    border-radius: 100%;
-fill: #e7e9fc;
-stroke-width: 1px;
-stroke: rgba(0, 0, 0, 0.1);
-border: 1px solid rgba(227, 175, 80, 0.4);
+    position: absolute; 
+    top: 24px; 
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E7E9FC;
+    border: 1px solid rgb(0, 0, 0, 0.10); 
+}
 
+.modal-close:hover, 
+.modal-close:focus {
+       background-color: #404BBF;
+       border: none;
+}
 
+.modal-close:hover > .close-icon,
+.modal-close:focus  > .close-icon{
+       fill: #fff;
 }
 
 .title-label {
@@ -595,9 +613,9 @@ fill: transparent;
 } 
 
 .is-open {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .footer-mail {
@@ -613,13 +631,14 @@ color: #fff;
 
 .btn-subscribe {
     position: relative;
-    font: 500 16px / 1.5 "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
 color: #fff;
 display: flex;
 align-items: center;
-
+justify-content: center;
 flex-direction: row;
 gap: 16px;
 border-radius: 4px;
