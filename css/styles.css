@@ -518,6 +518,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     top: 50%;
     left: 16px;
+    transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
@@ -557,6 +558,10 @@ color: #8e8f99;
 margin-bottom: 4px;
 }
 
+.user-comment {
+    border: 1px solid rgba(46, 47, 66, 0.4) 
+}
+
 .modal-btn {
     display: block;
     margin: 0 auto;
@@ -586,7 +591,10 @@ cursor: pointer;
 .model-check {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-
+    font-size: 12px; 
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99; 
 }
  .checkbox style 
  .modal-check-text {
@@ -692,4 +700,5 @@ border: none;
     right: 24px;
     top: 50%;
     transform: translateY(-50%);
+margin-left: 16px;
 }
