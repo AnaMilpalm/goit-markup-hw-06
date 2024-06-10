@@ -649,7 +649,7 @@ fill: transparent;
     pointer-events: auto;
 } */
 
-.checkbox:checked +.modal-check-text .box-check {
+.checkbox:checked .modal-check-text .box-check {
    background-color: #404bbf;
    border: none; 
    fill:  #F4F4FD; 
