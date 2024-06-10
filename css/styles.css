@@ -615,7 +615,6 @@ cursor: pointer;
     font-size: 12px;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: flex;
     align-items: center;
     line-height: 1.17; 
    
@@ -649,11 +648,12 @@ fill: transparent;
     pointer-events: auto;
 } */
 
-.checkbox:checked .modal-check-text .box-check {
+
+.model-check:checked + .modal-check-text .box-check {
    background-color: #404bbf;
    border: none; 
    fill:  #F4F4FD; 
-}
+} 
 .footer-mail {
     background-color: transparent;
 }
