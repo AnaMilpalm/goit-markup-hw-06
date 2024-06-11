@@ -43,7 +43,6 @@ img {
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
     align-items: baseline;
 }
 
@@ -648,6 +647,12 @@ fill: transparent;
     pointer-events: auto;
 } */
 
+.is-close {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 
 .model-check:checked + .modal-check-text .box-check {
    background-color: #404bbf;
@@ -676,7 +681,6 @@ border-radius: 4px;
 width: 264px;
 height: 40px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-margin-right: 24px;
 background-color: transparent;
 font-size: 12px;
 line-height: 2;
@@ -706,7 +710,7 @@ justify-content: center;
 flex-direction: row;
 gap: 16px;
 border-radius: 4px;
-padding: 8px 24px;
+padding: 8px 24px 8px 0;
 min-width: 165px;
 height: 40px;
 background: #4d5ae5;
