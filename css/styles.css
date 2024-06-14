@@ -214,23 +214,23 @@ padding: 100px 0;
 /* section banner */
 .banner {
     padding: 72px 52px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/banner.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url("../images/banner-mob-min.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         margin: 0 auto;
 }
 
-/* .main-title {
-    font-weight: Bold;
-    font-size: 56px;
-    letter-spacing: 0.02em;
-    line-height: 1.07;
-    color: #fff;
-    text-align: center;
-    max-width: 496px;
-    margin: 0  auto 48px;
-} */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .banner {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url("../images/banner-mob-2x-min.jpg");
+    }
+}
+
+
 
 .main-title {
     font-weight: 700;
@@ -769,14 +769,24 @@ margin-left: 16px;
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        padding: 0;
-      
+        padding: 0; 
      } 
 
     .banner {
         padding: 112px 136px;
         max-width: 768px;
+
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url("../images/banner-tab-min.jpg");
     }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .banner {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url("../images/banner-tab-2x-min.jpg");
+    }
+}
 
     .main-title {
         font-size: 56px;
@@ -829,17 +839,30 @@ margin-left: 16px;
 }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;   
     }
     
     .banner {
-        padding: 188px 0;   
+        padding: 188px 0;  
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url("../images/banner-bg-min.jpg"); 
        
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .banner {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url("../images/banner-bg-2x-min.jpg");
+    }
 }
 .main-title {
     max-width: 496px;
+    text-align: center;
+    max-width: 496px;
+    margin: 0  auto 48px;
 }
 
 .list-portfolio {
