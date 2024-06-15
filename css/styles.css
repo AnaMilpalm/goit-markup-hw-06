@@ -100,6 +100,7 @@ pointer-events: none;
 padding: 24px;
 display: flex;
 flex-direction: column;
+justify-content: space-between;
 }
 .menu-close-btn {
     width: 24px;
@@ -110,10 +111,6 @@ flex-direction: column;
     right: 24px;
     top: 24px;
 }
- .mob-wrap-conteiner {
-    display: flex;
-    height: 100%;
-} 
 
 .mob-list-menu {
     display: flex;
@@ -125,12 +122,22 @@ line-height: 1.11111;
 letter-spacing: 0.02em;
 }
 
+.mob-wrap-contacts {
+ display: flex;
+ flex-direction: column;
+ height: 100%;
+ justify-content: flex-end;
+
+}
+
 .mob-link-contact:first-child {
     margin-bottom: 20px;
 }
 
 .social-list-item.flex-start {
     justify-content: start;
+    margin-bottom: 40px;
+
 }
 
 .mob-list-menu li a {
@@ -143,7 +150,7 @@ letter-spacing: 0.02em;
 }
 
 .mob-contacts {
-
+   
 }
 
 .mob-contact-list {
@@ -194,7 +201,8 @@ align-items: center;
 .wrap-flex {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .header {
