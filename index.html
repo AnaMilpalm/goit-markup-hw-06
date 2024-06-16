@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 5 </title>
+    <title>Task 6 </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -31,9 +31,9 @@
         <button class="menu-open-btn"  type="button"></button>
     </div>
 <!-- Menu mob -->
-<div class="mob-menu ">
+<div class="mob-menu" >
   
-<button type="button" class="menu-close-btn ">
+<button type="button" data-modal-close class="menu-close-btn">
         <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"> </use>
         </svg>
@@ -95,7 +95,7 @@
             <section class="banner">
                 <div class="container ">
                 <h1 class="main-title">Effective Solutions for Your Business </h1>
-                <button class="main-button" type="button">Order Service</button>
+                <button data-modal-open class="main-button" type="button">Order Service</button>
             </div>
             </section> 
             <!-- second section  -->
@@ -535,9 +535,9 @@
                 </div>
             </footer> 
              <!--modal window  -->
-            <div class="backdrop is-close">
+            <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <button type="button" class="modal-close">
+                    <button type="button" data-modal-close class="modal-close">
                         <svg class="close-icon" width="8" height="8">
                             <use href="./images/icons.svg#icon-close"> </use>
                         </svg>
@@ -606,5 +606,6 @@
                 </form>
             </div> 
         </div>
+        <script src="./js/modal.js"></script>
 </body>
 </html>
