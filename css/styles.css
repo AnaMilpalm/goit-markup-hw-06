@@ -1187,10 +1187,13 @@ justify-content: start;
 
 .description-company {
     margin-right: 120px;
+    margin-bottom: 0;
+    
 }
 .social-box {
     justify-content: start;
     margin-right: 80px;
+    margin-bottom: 0;
 }
 .list-team-card {
     width: 1128px;
