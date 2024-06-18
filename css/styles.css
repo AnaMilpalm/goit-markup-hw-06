@@ -1087,9 +1087,7 @@ justify-content: start;
 }
 
 @media screen and (min-width: 1158px) {
-    body {
-        font-size: 14px;
-    }
+  
     .container {
         max-width: 1158px;
         padding: 0 16px;   
@@ -1105,7 +1103,10 @@ justify-content: start;
         align-items: center;
         flex-direction: row;
     }
-   
+    .contacts li a {
+        font-size: 16px;
+        line-height: 1.5;
+    }
     .banner {
         padding: 188px 0;  
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
@@ -1162,6 +1163,11 @@ justify-content: start;
 .item-about-title {
     margin-bottom: 0;
 }
+.item-about .text,
+.team-card-description .text,
+.description-company .text {
+    font-weight: 400;
+}
 
 .icon-box {
     background-color: #F4F4FD;
@@ -1183,7 +1189,7 @@ justify-content: start;
     margin-right: 120px;
 }
 .social-box {
-    justify-content: center;
+    justify-content: start;
     margin-right: 80px;
 }
 .list-team-card {
